@@ -1,0 +1,31 @@
+DESCRIPTION
+--------------------------------------------------------------------------------
+A relatively simple to use Python module that speaks the mythtv protocol.
+
+REQUIREMENTS
+--------------------------------------------------------------------------------
+ - A recent Python. Tested with 2.5, but older versions may work as well
+ - MythTV backend to connect to
+
+INSTALLATION
+--------------------------------------------------------------------------------
+ - Copy myth/ to python's site-packages directory
+ - Change the target address in test.py
+ - Run test.py
+ - Type 'help' for a list of commands
+
+NOTES
+--------------------------------------------------------------------------------
+ - This is NOT a complete protocol implementation, but new commands should be
+   relatively easy to add.
+ - Only protocol version 31 is supported... The code can probably be adapted to
+   newer versions by updating the ProgramInfo object in myth.types to match the
+   programinfo struct in the mythtv codebase.
+
+TODO
+--------------------------------------------------------------------------------
+Ideally, this package should be updated to work with newer versions of the
+mythtv protocol, but the mythtv devs have started working on replacing the QT
+serialization based protocol with an XML based protocol, in order to make it
+more flexible and easier to use by third-party applications, negating the need
+for this library.
