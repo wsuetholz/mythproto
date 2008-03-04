@@ -1,0 +1,7 @@
+Fix QueryCheckFile... Always returns True.
+QueryUptime.getUptime() returns an unreasonably high number.
+Make the frontend module look like less of a hack
+When using a stdin pipe, mplayer locks up after a few seconds. Figure out why or finish implementing a FIFO output.
+Finish implementing ProgramInfo
+Make sure myth.types.Direction matches it's header file
+Implement a Channel class
